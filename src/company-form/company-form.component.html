@@ -1,0 +1,5 @@
+<form [formGroup]="company">
+  <app-address-form formControlName="address"></app-address-form>
+</form>
+<button (click)="switchAddressState()">Enable/Disable address form</button>
+<p>Address: {{ company.controls.address.value | json }}</p>

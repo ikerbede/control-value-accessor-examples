@@ -1,0 +1,5 @@
+<form [formGroup]="weather">
+  <app-thermometer-input formControlName="temperature"></app-thermometer-input>
+</form>
+<button (click)="switchThermometerState()">Enable/Disable thermometer</button>
+<p>Temperature: {{ weather.controls.temperature.value }}</p>

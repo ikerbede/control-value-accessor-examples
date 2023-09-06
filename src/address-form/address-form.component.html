@@ -1,0 +1,37 @@
+<fieldset [formGroup]="address">
+  <ul>
+    <li>
+      <label for="streetNumber">Street number</label>
+      <input
+        type="number"
+        name="streetNumber"
+        formControlName="streetNumber"
+        step="1"
+      />
+    </li>
+    <li>
+      <label for="streetName">Street name</label>
+      <input type="text" name="streetName" formControlName="streetName" />
+    </li>
+    <li>
+      <label for="additionalInformation">Additional information</label>
+      <input
+        type="text"
+        name="additionalInformation"
+        formControlName="additionalInformation"
+      />
+    </li>
+    <li>
+      <label for="postalCode">Postal code</label>
+      <input type="text" name="postalCode" formControlName="postalCode" />
+    </li>
+    <li>
+      <label for="city">City</label>
+      <input type="text" name="city" formControlName="city" />
+    </li>
+    <li>
+      <label for="country">Country</label>
+      <input type="text" name="country" formControlName="country" />
+    </li>
+  </ul>
+</fieldset>
